@@ -230,15 +230,15 @@ header:before {
 .about-portrait p {
     color: var(--branco-gelo);
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
 
 .about-portrait {
-    max-width: 400px;
-    max-height: 650px;
+    width: 40vh;
+    height: 60vh;
 }
 
 @media only screen and (max-width: 1023px) {
