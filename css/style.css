@@ -177,6 +177,7 @@ header:before {
 
 .about-info {
     display: flex;
+    margin: 0 20px 0 20px;
 }
 
 .about-title {
@@ -240,10 +241,11 @@ header:before {
     max-height: 650px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     #about {
         height: 100%;
         padding: 80px;
+        align-items: center;
     }
 
     .about-title {
@@ -348,7 +350,6 @@ header:before {
 
 .feedback-customer-review p {
     color: var(--branco-gelo);
-    text-align: justify;
     font-family: Open Sans;
     font-size: 1.3rem;
     font-style: normal;
@@ -363,7 +364,7 @@ header:before {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     #projects {
         height: auto;
     }
@@ -371,34 +372,27 @@ header:before {
     .projects-mobile {
         display: flex;
         flex-direction: column;
-        gap: 50px;
     }
 
     .feedback-card {  
-        height: 120vh;
+        height: fit-content;
 
         background: linear-gradient(100deg, var(--azur), var(--azul));
         border-radius: 24px 0 24px 0;
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
-
-    .feedback-img {
-        grid-area: 1 / 1 / 2 / 2;
-
-        height: 40vh;
-    }
     
     .feedback-customer {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 1 / 1 / 2 / 2;
     }
     
     .feedback-customer-review {
-        grid-area: 3 / 1 / 4 / 2;
+        grid-area: 2 / 1 / 3 / 2;
     }
 
     .feedback-img img {
@@ -410,7 +404,7 @@ header:before {
         padding: 8px;
     
         object-fit: cover;
-        display: block;
+        display: none;
     }
 
     .feedback-customer img {
@@ -439,7 +433,7 @@ header:before {
     }
     
     .feedback-customer-review p{ 
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .feedback-customer-show-mobile {
@@ -509,7 +503,6 @@ header:before {
 
 .feedback-customer-review-reverse p {
     color: var(--branco-gelo);
-    text-align: justify;
     font-family: Open Sans;
     font-size: 1.3rem;
     font-style: normal;
@@ -524,36 +517,30 @@ header:before {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     #projects {
         height: 100%;
     }
 
     .feedback-card-reverse {  
-        height: 120vh;   
+        height: fit-content;
         
         background: linear-gradient(100deg, var(--azur), var(--azul));
         border-radius: 0px 24px;
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
-
-    .feedback-img-reverse {
-        grid-area: 1 / 1 / 2 / 2;
-
-        height: 40vh;
-    }
     
     .feedback-customer-reverse {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 1 / 1 / 2 / 2;
     }
     
     .feedback-customer-review-reverse {
-        grid-area: 3 / 1 / 4 / 2;
+        grid-area: 2 / 1 / 3 / 2;
     }
 
     .feedback-img-reverse img {
@@ -565,7 +552,7 @@ header:before {
         padding: 8px;
     
         object-fit: cover;
-        display: block;
+        display: none;
     }
 
     .feedback-customer-reverse img {
@@ -592,7 +579,7 @@ header:before {
     }
     
     .feedback-customer-review-reverse p{ 
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .feedback-customer-show-mobile-reverse {
